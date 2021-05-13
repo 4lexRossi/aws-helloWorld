@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
-/*-------------Reset-------------*/
+
 html {
   scroll-behavior: smooth;
 }
@@ -19,12 +19,30 @@ body {
 
 .container-form {
   position: absolute;
-  margin-top: 150px;
+  margin-top: 150px;  
 }
-label, button {
+
+label {
   color: #FF9900;
   font-size: 20px;
   margin-left: 40px;
+}
+
+button {
+  font-size: 20px;
+  font-weight: 300;
+  color: rgb(11, 87, 21);
+  background-color: rgb(122, 233, 137);
+  border: 0;
+  border-radius: 5px;
+  transition: 200ms;
+}
+
+button:hover {  
+  background-color: rgb(21, 240, 50);  
+  border-color: rgb(53, 52, 52);
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 input {
@@ -59,12 +77,12 @@ input {
   display: flex;
   height: 4em;
   line-height: 4em;
-  flex-grow: 1;
+  flex-grow: 1;  
 }
 
 .nav-link,
 .logo {
-  padding: 0 1em;
+  padding: 0 1em;    
 }
 
 span.gradient {
@@ -75,7 +93,6 @@ span.gradient {
 }
 
 span.gradient:hover {
-  animation-name: logo-hover;
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.17, 0.57, 0.31, 0.85);
@@ -120,12 +137,6 @@ a:hover {
   padding-right: 2em;
 }
 
-img {
-  width: 50px;
-  margin-left: 10px;
-  margin-bottom: 50px;
-  position: absolute;
-}
 #footer {
   width: 100%;  
   display: flex;  
